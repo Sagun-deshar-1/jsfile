@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+.boxes{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="day"></div>
+        <div class="month"></div>
+        <div class="year"></div>
+       </div>
+       <button onclick="showdate()">Showdate</button>
+<script>
+    
+   
+
+    let dd= new date().getDay()
+    let mm = new date().getMonth()
+    let yy = new date().getFullYear()
+    
+    function showdate(){
+      
+    document.getElementID('dd').innerHTML = dd
+    document.getElementID('mm').innerHTML = mm
+    document.getElement('yy').innerHTML =yy
+}
+</script>
+    
+    
+</body>
+</html>
