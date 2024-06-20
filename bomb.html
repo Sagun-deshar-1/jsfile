@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bomb</title>
+</head>
+<body>
+
+    <img src="./media/bomb.jpg" alt="" width="400px" height="500px"
+    onmouseover="switchon()" onmouseout="switchoff()" >
+    <br>
+    <button onclick="switchon()">switch on</button>
+    <button onclick="switchoff()">switch off</button>
+    
+    <script>
+        function switchon(){
+            document.querySelector('img').src = "media/blast.webp"
+        }
+        function switchoff(){
+            document.querySelector('img').src = "media/bomb.jpg"
+        }
+
+    </script>
+    
+</body>
+</html>
